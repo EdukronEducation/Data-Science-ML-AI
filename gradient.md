@@ -8,149 +8,152 @@ Think of it as:
 
 ---
 
-# 📘 Example Function
+## 📘 Example Function
 
 We use a very simple function:
 
-\[
-f(x) = x^2
-\]
+```
+f(x) = x²
+```
 
 The minimum is clearly at **x = 0**.
 
 ---
 
-# 🧮 Step 1: Pick a Starting Point
+## 🧮 Step 1: Pick a Starting Point
 
-\[
+```
 x = 4
-\]
+```
 
 ---
 
-# 🧮 Step 2: Compute the Gradient (Derivative)
+## 🧮 Step 2: Compute the Gradient (Derivative)
 
 For:
 
-\[
-f(x) = x^2,
-\]
+```
+f(x) = x²
+```
 
 the derivative is:
 
-\[
+```
 f'(x) = 2x
-\]
+```
 
 At **x = 4**:
 
-\[
-f'(4) = 2 \cdot 4 = 8
-\]
+```
+f'(4) = 2 × 4 = 8
+```
 
 Slope is **+8** (uphill).
 
 ---
 
-# 🧮 Step 3: Update the Value of x
+## 🧮 Step 3: Update the Value of x
 
 Gradient Descent update rule:
 
-\[
-x_{\text{new}} = x - \alpha \cdot f'(x)
-\]
+```
+x_new = x - α × f'(x)
+```
 
 Let learning rate:
 
-\[
-\alpha = 0.1
-\]
+```
+α = 0.1
+```
 
 So:
 
-\[
-x_{\text{new}} = 4 - 0.1 \cdot 8 = 3.2
-\]
+```
+x_new = 4 - 0.1 × 8 = 3.2
+```
 
 ---
 
-# 🔁 Repeat the Steps
+## 🔁 Repeat the Steps
 
-## **Iteration 2**
-Current:
+### Iteration 2
 
-\[
+**Current:**
+
+```
 x = 3.2
-\]
+```
 
-Gradient:
+**Gradient:**
 
-\[
-f'(3.2) = 2 \cdot 3.2 = 6.4
-\]
+```
+f'(3.2) = 2 × 3.2 = 6.4
+```
 
-Update:
+**Update:**
 
-\[
-x_{\text{new}} = 3.2 - 0.1 \cdot 6.4 = 2.56
-\]
+```
+x_new = 3.2 - 0.1 × 6.4 = 2.56
+```
 
 ---
 
-## **Iteration 3**
-Current:
+### Iteration 3
 
-\[
+**Current:**
+
+```
 x = 2.56
-\]
+```
 
-Gradient:
+**Gradient:**
 
-\[
+```
 f'(2.56) = 5.12
-\]
+```
 
-Update:
+**Update:**
 
-\[
-x_{\text{new}} = 2.56 - 0.1 \cdot 5.12 = 2.048
-\]
+```
+x_new = 2.56 - 0.1 × 5.12 = 2.048
+```
 
 ---
 
-## **Iteration 4**
-Current:
+### Iteration 4
 
-\[
+**Current:**
+
+```
 x = 2.048
-\]
+```
 
-Gradient:
+**Gradient:**
 
-\[
+```
 f'(2.048) = 4.096
-\]
+```
 
-Update:
+**Update:**
 
-\[
-x_{\text{new}} = 2.048 - 0.1 \cdot 4.096 = 1.6384
-\]
+```
+x_new = 2.048 - 0.1 × 4.096 = 1.6384
+```
 
 ---
 
-# 🎯 Summary Table
+## 🎯 Summary Table
 
 | Iteration | x Value | Gradient (2x) | Updated x |
-|----------|---------|----------------|-----------|
-| 1 | 4.00 | 8.00 | 3.20 |
-| 2 | 3.20 | 6.40 | 2.56 |
-| 3 | 2.56 | 5.12 | 2.048 |
-| 4 | 2.048 | 4.096 | 1.6384 |
+|-----------|---------|---------------|-----------|
+| 1         | 4.00    | 8.00          | 3.20      |
+| 2         | 3.20    | 6.40          | 2.56      |
+| 3         | 2.56    | 5.12          | 2.048     |
+| 4         | 2.048   | 4.096         | 1.6384    |
 
 ---
 
-# ⭐ Final Intuition
+## ⭐ Final Intuition
 
 - The gradient tells you **which direction is uphill**
 - Move **opposite the gradient** (downhill)
@@ -159,8 +162,8 @@ x_{\text{new}} = 2.048 - 0.1 \cdot 4.096 = 1.6384
 
 ---
 
-Let me know if you want:
+**Let me know if you want:**
 
-- Python implementation  
-- A visual graph  
-- Multi-variable gradient descent explanation  
+- Python implementation
+- A visual graph
+- Multi-variable gradient descent explanation
