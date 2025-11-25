@@ -30,10 +30,12 @@ x = 4
 
 # 🧮 Step 2: Compute the Gradient (Derivative)
 
-For  
+For:
+
 \[
 f(x) = x^2,
 \]
+
 the derivative is:
 
 \[
@@ -74,54 +76,63 @@ x_{\text{new}} = 4 - 0.1 \cdot 8 = 3.2
 
 # 🔁 Repeat the Steps
 
-## Iteration 2
-Current:  
+## **Iteration 2**
+Current:
+
 \[
 x = 3.2
 \]
 
 Gradient:
+
 \[
 f'(3.2) = 2 \cdot 3.2 = 6.4
 \]
 
 Update:
+
 \[
 x_{\text{new}} = 3.2 - 0.1 \cdot 6.4 = 2.56
 \]
 
 ---
 
-## Iteration 3
+## **Iteration 3**
 Current:
+
 \[
 x = 2.56
 \]
 
 Gradient:
+
 \[
 f'(2.56) = 5.12
 \]
 
 Update:
+
 \[
 x_{\text{new}} = 2.56 - 0.1 \cdot 5.12 = 2.048
 \]
 
 ---
 
-## Iteration 4
+## **Iteration 4**
 Current:
+
 \[
 x = 2.048
 \]
 
 Gradient:
+
 \[
 f'(2.048) = 4.096
 \]
 
 Update:
+
 \[
 x_{\text{new}} = 2.048 - 0.1 \cdot 4.096 = 1.6384
 \]
@@ -144,11 +155,12 @@ x_{\text{new}} = 2.048 - 0.1 \cdot 4.096 = 1.6384
 - The gradient tells you **which direction is uphill**
 - Move **opposite the gradient** (downhill)
 - Learning rate (**α**) controls **step size**
-- Repeating this will move you toward the minimum
+- Repeating this will gradually move you toward the minimum
 
 ---
 
 Let me know if you want:
-- A Python implementation  
-- Visual graph  
+
+- Python implementation  
+- A visual graph  
 - Multi-variable gradient descent explanation  
